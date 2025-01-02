@@ -18,11 +18,12 @@
     color: #000;
 }
 
-.btn-primary:hover {
+.btn-primary:hover{
     background-color: var(--primary-color);
-    border-color: #5728b8;
+    border-color: #3a3a3a;
     color: #ffffff;
 }
+
 
 .text-primary {
     color: var(--primary-color) !important;
