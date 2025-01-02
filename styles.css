@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #6c33da;
+    --accent-color: #fed70d;
+    --white-color: #ffffff;
+}
+
+.nav-link {
+    color: var(--white-color);
+}
+
+.navbar-dark {
+    background-color: var(--primary-color);
+}
+
+.btn-primary {
+    background-color: var(--white-color);
+    border-color: var(--primary-color);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    border-color: #5728b8;
+    color: #ffffff;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--accent-color) !important;
+}
+
+.hero-section {
+    padding: 50px 0px;
+}
+
+.hero-section h1 {
+    color: #333;
+    line-height: 1.2;
+}
+
+.hero-section p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.carousel-overlay h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.carousel-overlay .lead {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.countdown-section {
+    background: var(--primary-color);
+}
+
+.pricing-card .card-header {
+    background-color: var(--primary-color);
+}
+
+.service-card:hover {
+    border-color: var(--primary-color);
+}
+
+.stat-icon {
+    color: var(--primary-color);
+}
+
+.btn-volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 5px 0px 60px 0px;
+        min-height: auto;
+        text-align: center;
+    }
+    
+    .hero-section .col-lg-6:first-child {
+        order: 2;
+    }
+    
+    .hero-section .col-lg-6:last-child {
+        order: 1;
+    }
+    
+    .navbar-collapse {
+        text-align: center;
+    }
+    
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+    
+    .navbar-nav .nav-link {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-overlay h1 {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-overlay .lead {
+        font-size: 1.2rem;
+    }
+} 
+
