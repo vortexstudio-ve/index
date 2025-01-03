@@ -672,8 +672,9 @@
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#pagoModal">
-                                Comprar Ahora
+                            <!-- Producto 1 -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pagoModal" data-producto="WhatsApp con IA">
+                                Comprar ahora
                             </button>
                         </div>
                     </div>
@@ -692,8 +693,9 @@
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#pagoModal">
-                                Comprar Ahora
+                           <!-- Producto 2 -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pagoModal" data-producto="Instagram y Facebook con IA">
+                                Comprar ahora
                             </button>
                         </div>
                     </div>
@@ -712,8 +714,9 @@
                             </div>
                         </div>
                         <div class="card-footer bg-white border-0">
-                            <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#pagoModal">
-                                Comprar Ahora
+                            <!-- Producto 3 -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pagoModal" data-producto="Atención al cliente Web con IA">
+                                Comprar ahora
                             </button>
                         </div>
                     </div>
@@ -769,10 +772,55 @@
 
     
 
-    
+ 
+<!-- Modal de Opciones de Pago -->
+<div class="modal fade" id="pagoModal" tabindex="-1" aria-labelledby="pagoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="pagoModalLabel">Selecciona tu método de pago</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-options">
+                    <!-- Botón de pago PayPal para Producto 1 -->
+                    <div class="payment-option mb-3" id="payPalProducto1">
+                        <a href="https://www.paypal.com/ncp/payment/PQU8XFQ7CBGYJ" target="_blank">
+                            <button class="btn btn-outline-primary w-100 py-3" onclick="procesarPago('paypal', 'WhatsApp con IA')">
+                                <i class="fab fa-paypal me-2"></i> Pagar con PayPal
+                            </button>
+                        </a>
+                    </div>
+
+                    <!-- Botón de pago PayPal para Producto 2 -->
+                    <div class="payment-option mb-3" id="payPalProducto2" class="d-none">
+                        <a href="https://www.paypal.com/ncp/payment/XU2MK7LRJEEBE" target="_blank">
+                            <button class="btn btn-outline-primary w-100 py-3" onclick="procesarPago('paypal', 'Instagram y Facebook con IA')">
+                                <i class="fab fa-paypal me-2"></i> Pagar con PayPal
+                            </button>
+                        </a>
+                    </div>
+
+                    <!-- Botón de pago PayPal para Producto 3 -->
+                    <div class="payment-option mb-3" id="payPalProducto3" class="d-none">
+                        <a href="https://www.paypal.com/ncp/payment/ATNM795Z824BG" target="_blank">
+                            <button class="btn btn-outline-primary w-100 py-3" onclick="procesarPago('paypal', 'Atención al cliente Web con IA')">
+                                <i class="fab fa-paypal me-2"></i> Pagar con PayPal
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
     
 
-    <!-- Modal de Opciones de Pago -->
+    <!-- Modal de Opciones de Pago 
     <div class="modal fade" id="pagoModal" tabindex="-1" aria-labelledby="pagoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -800,7 +848,7 @@
             </div>
         </div>
     </div>
-
+-->
     
 
     <!-- Footer -->
