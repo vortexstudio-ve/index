@@ -1,3 +1,43 @@
+/* Barra de desplazamiento en navegadores Webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 5px; /* Ancho de la barra de desplazamiento */
+    height: 5px; /* Altura para el desplazamiento horizontal */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff; /* Color del fondo de la barra de desplazamiento */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); /* Color del "pulgar" (la parte que se mueve) */
+    border-radius: 10px; /* Esquinas redondeadas para el pulgar */
+  }
+  
+
+
+
+
+/* Cambiar el cursor 
+body {
+    cursor: url('data:image/png;base64, ...'), auto; /* Aquí puedes poner una URL a una imagen o usar base64 
+  } 
+  
+  /* Si quieres un cursor predeterminado pero con color amarillo 
+  * {
+    cursor: pointer; /* Esto cambiará el cursor a una mano al pasar por encima de elementos clickeables 
+  }
+  
+  /* O usar el cursor predeterminado con estilo en el cuerpo 
+  html {
+    cursor: crosshair; /* Cursor tipo cruz 
+  }
+
+*/
+
+
+
+
+
 :root {
     --primary-color: #383838;
     --accent-color: #fed70d;
