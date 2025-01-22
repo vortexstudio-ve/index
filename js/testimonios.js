@@ -45,8 +45,8 @@ if (currentIndex >= slides.length - 3) {
 updateSwiper();
 }
 
-// Cambio automático cada 3 segundos
-setInterval(showNextSlide, 3000);
+// Cambio automático cada 6 segundos
+setInterval(showNextSlide, 8000);
 /*
 // Deslizamiento táctil y con mouse
 swiperWrapper.addEventListener('touchstart', e => {
