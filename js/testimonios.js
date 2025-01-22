@@ -98,7 +98,7 @@ function autoShowNextSlide() {
 // Configuración inicial al cargar la página
 document.addEventListener('DOMContentLoaded', () => {
   createIndicators();
-  setInterval(autoShowNextSlide, 2000); // Cambio automático cada 8 segundos
+  setInterval(autoShowNextSlide, 6000); // Cambio automático cada 8 segundos
 });
 
 // Ajustar al redimensionar la pantalla
