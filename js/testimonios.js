@@ -106,7 +106,7 @@ window.addEventListener('resize', () => {
   createIndicators();
   updateSwiper();
 });
-
+/*
 // Deslizamiento táctil y con mouse
 let startX = 0;
 let isDragging = false;
@@ -144,6 +144,7 @@ swiperWrapper.addEventListener('mouseup', () => {
 swiperWrapper.addEventListener('mouseleave', () => {
   isDragging = false;
 });
+*/
 
 function handleSwipe(deltaX) {
   if (deltaX > 50 && currentIndex > 0) {

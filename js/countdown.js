@@ -1,5 +1,5 @@
 // Fecha objetivo fija: 15 de enero de 2025
-const targetDate = new Date('2025-02-01T23:59:59');
+const targetDate = new Date('2025-03-01T23:59:59');
 
 function updateCountdown() {
     const currentDate = new Date();
